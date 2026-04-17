@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Olympic Conscience</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <!--Cabeçalho da página-->
+    <header>
+        <div class="cabecalho">
+            <img class="logo" src="img/logo.png" alt="">
+            <h1>Olympic Conscience</h1>
+            <button>Login</button>
+        </div>
+        <nav class="menu=navegacao">
+            <ul class="lista-menu">
+                <li><a href="">Página Inicial</a></li>
+                <li><a href="">Olímpiadas</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Experiências</a></li>
+                <li><a href="">Ranking</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Notícias das olimpíadas-->
+    <main class="conteudo">
+        <section class="lista-noticias">
+            <h2>Notícias em Destaque</h2>
+            <div class="artigos">
+                <article class="noticia">
+                    <img class="imagem-noticia" src="img/omif.jpg" alt="">
+                    <h3>Inscrições abertas OMIF 2026</h3>
+                    <h4>
+                        <span>OMIF</span>
+                        <span>23/03/2026</span>
+                    </h4>
+                    <p>A Olimpíada de Matemática dos Institutos Federais (OMIF) abriu as inscrições para a primeira fase
+                        das provas.</p>
+                    <a href="">Saiba mais →</a>
+
+                </article>
+
+                <article class="noticia">
+                    <img class="imagem-noticia" src="img/obmep.jpg" alt="">
+                    <h3>Inscrições abertas OBMEP 2026</h3>
+                    <h4>
+                        <span>OBMEP</span>
+                        <span>09/03/2026</span>
+                    </h4>
+                    <p>A Olimpíada Brasileira de Matemáticas das Escolas Públicas (OBMEP) abriu as inscrições para as
+                        provas.</p>
+                    <a href="">Saiba mais →</a>
+
+                </article>
+
+                <article class="noticia">
+                    <img class="imagem-noticia" src="img/oba.jpg" alt="">
+                    <h3>Resultado oficial OBA 2025 divulgado</h3>
+                    <h4>
+                        <span>OBA</span>    
+                        <span>13/09/2025</span>
+                    </h4>
+                    <p>Foi divulgado neste sábado (13) o resultado oficial da Olimpíada Brasileira de Astronomia e Astronáutica (OBA).</p>
+                    <a href="">Saiba mais →</a>
+
+                </article>
+
+
+                <article class="noticia">
+                    <img class="imagem-noticia" src="img/onc.jpg" alt="">
+                    <h3>Alunos premiados na ONC concorrem a de intercâmbio no Méximo</h3>
+                    <h4>
+                        <span>ONC</span>
+                        <span>10/08/2025</span>
+                    </h4>
+                    <p>Os alunos premiados na Olimpíada Nacional de Ciências podem concorrer a intercâmbio.</p>
+                    <a href="">Saiba mais →</a>
+                </article>
+            </div>
+            <button>Ver todas as notícias</button>
+        </section>
+
+        <aside class="barra-lateral">
+            <section class="perfil-usuario">
+                <h2>👤 Meu Perfil</h2>
+                <img class="foto-perfil" src="img/foto_perfil.JPG" alt="">
+                <h3 id="nome">Bernardo Guedes</h3>
+                <h4>Nível: Iniciante</h4>
+                <div class="pontuacao">
+                    <p id="meus-pontos">Meus Pontos</p>
+                    <p id="num-pontos">1.250</p>
+                    <p id="pontos-semana"><span>+90</span> esta semana</p>
+                </div>
+            </section>
+
+            <section class="busca-rapida">
+                <h2>🔍 Busca Rápida</h2>
+                <form>
+                    <label class="item-formulario">Olimpíada: </label><br>
+                    <input class="item-formulario" type="text" placeholder="Ex: OBMEP"><br>
+                    <label class="item-formulario">Ano: </label><br>
+                    <input class="item-formulario" type="text" placeholder="Ex: 2022"><br>
+                    <input class="item-formulario" type="submit" value="Buscar">
+                </form>
+
+            </section>
+        </aside>
+    </main>
+
+
+
+    <footer class="rodape">
+        <div class="rodape-geral">
+            <img class="logo-rodape"src="img/logo.png" alt="">
+            <h3>Olympic Consicence</h3>
+            </ul>
+            <p>Não nos formamos apenas medalhistas, mas mentes curiosas, disciplinadas e capazes de resolver problemas
+                que o mundo ainda nem sabe que tem.</p>
+        </div>
+        <div class="rodape-nav">
+            <h4>Navegação</h4>
+            <ul class="lista-nav-rodape">
+                <li><a href="">Página Inicial</a></li>
+                <li><a href="">Olímpiadas</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Experiências</a></li>
+                <li><a href="">Ranking</a></li>
+        </div>
+        <div class="rodape-contato">
+            <h4>Contato</h4>
+            <ul class="contatos">
+                <li>📧 contato@olympicconscience.org</li>
+                <li>📞 (31) 99823-2504</li>
+                <li>📌 Belo Horizonte, MG - Brasil</li>
+            </ul>
+        </div>
+        <p class="copy">© 2026 Olympic Conscience. Todos os direitos reservados</p>
+    </footer>
+
 </body>
+
 </html>

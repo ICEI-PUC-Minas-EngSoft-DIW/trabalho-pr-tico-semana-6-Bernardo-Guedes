@@ -1,0 +1,832 @@
+body {
+    background-color: #f0f2f6;
+    padding-top: 155px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*---------------------------------------------CSS do Cabeçalho---------------------------------------------------------------*/
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(8, 28, 66);
+    display: flex;
+    align-items: center;
+}
+
+header>div>button{
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(8, 28, 66);
+}
+
+header>div>button:hover{
+    background-color:lightgray;
+}
+
+.logo{
+    width: 120px;
+}
+
+
+
+.lista-menu  {
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    padding: 7px 0;
+    background-color: #dbeaea;
+    margin: 0;
+}
+
+.lista-menu li{
+    display: inline-block;
+    padding: 3px 60px;
+    border-radius: 5px;
+    color: rgb(8, 28, 66);;
+    font-weight: 750;
+    margin: 0;
+}
+
+.lista-menu li a{
+    text-decoration: none;
+}
+
+
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 350%;
+    font-weight: 350;
+    text-align: center;
+    width: 80%;
+    color: white;
+    margin: 0;
+}
+
+
+/*---------------------------------------------CSS do Conteúdo Principal-------------------------------------------------*/
+
+.conteudo{
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
+.artigos{
+    display: flex;
+
+}
+
+.noticia{
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 0 16px;
+}
+
+.artigos img{
+    width: 230px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 10px;
+}   
+
+.lista-noticias{
+    background-color: white;
+    border-radius: 20px;
+    margin: 18px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.lista-noticias h2{
+    padding: 0;
+    margin: 10px 0 10px 22px;
+    font-size: 130%;
+}
+
+.lista-noticias > button{
+    display:block;
+    cursor: pointer;
+    background-color: #dbeaea;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(8, 22, 66);
+    margin: 14px auto;
+}
+
+.lista-noticias > button:hover{
+    background-color: rgb(8,28,66);
+    color: white;
+}
+
+.noticia h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.noticia h4{
+    margin-left: 10px;
+}
+
+.noticia a{
+    color: black;
+    margin-left: 10px;
+}
+
+.noticia{
+    background-color: rgb(214, 212, 212);
+    padding-bottom: 15px;
+}
+
+.noticia p{
+    text-align: justify;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    padding-bottom: 8px;
+}
+
+
+
+
+/*----------------------------------------------CSS da Barra Lateral -------------------------------------------*/
+.barra-lateral{
+    margin: 0;
+    width: 300px;
+}
+
+.perfil-usuario{
+    background-color: white;
+    margin: 18px 0px;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-usuario #nome{
+    float: left;
+    font-size: 105%;
+    margin-top: 35px;
+
+}
+
+.perfil-usuario h2{
+    padding: 0;
+    margin: 0 0 0 20px;
+    font-size: 130%;
+}
+
+.perfil-usuario p:nth-of-type(2){
+    font-size: xx-large;
+    font-style: bold;
+
+}   
+.perfil-usuario h4{
+    font-size: 90%;
+}
+
+.foto-perfil{
+    margin: 20px 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 3px rgb(151, 0, 181);
+    float:left;
+    width: 70px;
+}
+
+.pontuacao{
+    clear: both;
+    height: 150px;
+}
+
+
+
+#meus-pontos{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 530;
+    float: left;
+    padding: 0;
+}
+
+#num-pontos{
+    float: left;
+    margin-top:10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    padding: 0;
+}
+
+#pontos-semana{
+    clear: both;
+    margin-left: 20px;
+    display: inline;    
+    background-color: rgb(222, 222, 222);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(116, 116, 116);
+}
+
+#pontos-semana span{
+    color: rgb(31, 171, 31);
+    font-weight: 550;
+}
+
+.busca-rapida{
+    background-color: white;
+    margin: 18px 0px;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    height: 180px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.busca-rapida h2{
+    margin: 0 0 20px 20px;
+    font-size: 120%;
+
+}
+
+.busca-rapida form{
+    margin: 0 0 0 20px;
+}
+
+.item-formulario{
+    margin-bottom: 7px;
+}
+
+
+/*----------------------------------------------CSS do Rodapé -------------------------------------------------------*/
+
+.rodape{
+    clear: both;
+    background-color: rgb(8, 28, 66);
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    color: white;
+}
+
+.rodape div{
+    margin-bottom: 30px;
+}
+.rodape div:nth-of-type(2){
+    margin-top: 10px;
+    border-left: 1px solid rgb(40, 60, 110);
+    padding-left: 10px;
+}
+
+.rodape div:nth-of-type(3){
+    margin-top: 10px;
+    border-left: 1px solid rgb(40, 60, 110);
+    padding-left: 10px;
+}
+
+.rodape-geral{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.rodape-geral h3{
+    width: 200px;
+}
+
+.rodape-geral p:first-of-type{
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.logo-rodape{
+    width: 100px;
+}
+
+.rodape-nav{
+    width: 30%;
+}
+
+.lista-nav-rodape{
+    list-style-type: none;
+}
+
+.lista-nav-rodape a {
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+
+.rodape-contato{
+       width: 30%; 
+}
+
+.contatos{
+    list-style-type: none;
+}
+
+.contatos li{
+    line-height: 2;
+}
+
+
+/* ============================================================
+   MEDIA QUERIES — RESPONSIVIDADE
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   iPad Pro — 1024px
+   ---------------------------------------------------------- */
+@media (max-width: 1024px) {
+ 
+    /* Cabecalho */
+    body {
+        padding-top: 130px;
+    }
+ 
+    .cabecalho {
+        height: 90px;
+    }
+ 
+    .logo {
+        width: 80px;
+    }
+ 
+    h1 {
+        font-size: 220%;
+    }
+ 
+    header > div > button {
+        padding: 8px 24px;
+        font-size: 13px;
+    }
+ 
+    .lista-menu li {
+        padding: 3px 28px;
+        font-size: 14px;
+    }
+ 
+    /* Conteudo principal */
+    .conteudo {
+        flex-direction: row-reverse;
+        gap: 16px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+ 
+    /* Artigos em grid 2x2 */
+    .artigos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 10px;
+    }
+ 
+    .noticia {
+        width: auto;
+        margin: 0;
+    }
+ 
+    .artigos img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+ 
+    /* Barra lateral */
+    .barra-lateral {
+        width: 240px;
+        flex-shrink: 0;
+    }
+ 
+    /* Perfil: foto centralizada, demais itens alinhados a esquerda em coluna */
+    .perfil-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+ 
+    .perfil-usuario h2 {
+        align-self: flex-start;
+        margin: 0 0 0 20px;
+    }
+ 
+    .foto-perfil {
+        float: none;
+        display: block;
+        margin: 14px auto 6px auto;
+    }
+ 
+    .perfil-usuario #nome {
+        float: none;
+        align-self: flex-start;
+        margin: 8px 0 0 20px;
+        font-size: 105%;
+    }
+ 
+    .perfil-usuario h4 {
+        align-self: flex-start;
+        margin: 15px 0 15px 20px;
+    }
+ 
+    /* Pontuacao: itens em coluna, alinhados a esquerda */
+    .pontuacao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+        padding-bottom: 14px;
+    }
+ 
+    #meus-pontos {
+        float: none;
+        display: block;
+        margin: 15px 0 0 20px;
+    }
+ 
+    #num-pontos {
+        float: none;
+        display: block;
+        margin: 4px 0 0 20px;
+    }
+ 
+    #pontos-semana {
+        display: inline-block;
+        float: none;
+        clear: both;
+        margin: 10px 0 0 20px;
+    }
+ 
+    /* Rodape: divs lado a lado, copyright embaixo */
+    .rodape {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        padding: 10px 0;
+    }
+ 
+    /* O paragrafo de copyright fica em largura total, embaixo */
+    .rodape > p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        order: 4;
+        border-top: 1px solid rgb(40, 60, 110);
+    }
+ 
+    .rodape-geral {
+        width: 30%;
+        margin-left: 10px;
+        order: 1;
+    }
+ 
+    .rodape-geral p:first-of-type {
+        width: 100%;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+ 
+    .rodape-geral h3 {
+        font-size: 13px;
+        width: auto;
+    }
+ 
+    .logo-rodape {
+        width: 60px;
+    }
+ 
+    .rodape-nav {
+        width: 28%;
+        font-size: 13px;
+        order: 2;
+    }
+ 
+    .rodape-contato {
+        width: 28%;
+        font-size: 13px;
+        order: 3;
+    }
+ 
+    .lista-nav-rodape {
+        padding-left: 10px;
+    }
+ 
+    .contatos {
+        padding-left: 10px;
+    }
+ 
+    .rodape div:nth-of-type(2),
+    .rodape div:nth-of-type(3) {
+        margin-top: 10px;
+    }
+}
+
+
+/* ----------------------------------------------------------
+   iPhone 12 Pro — 390px
+   ---------------------------------------------------------- */
+@media (max-width: 430px) {
+
+    /* Cabeçalho */
+    body {
+        padding-top: 105px;
+    }
+
+    .cabecalho {
+        height: 65px;
+        padding: 0 12px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .logo {
+        width: 48px;
+    }
+
+    h1 {
+        font-size: 105%;
+        width: auto;
+        flex: 1;
+        text-align: center;
+    }
+
+    header > div > button {
+        padding: 6px 14px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* Menu de navegacao — rolagem horizontal */
+    .lista-menu {
+        display: flex;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 6px 0;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .lista-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lista-menu li {
+        display: inline-block;
+        padding: 4px 16px;
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+
+    /* Conteudo principal — coluna unica, centralizado */
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        gap: 0;
+    }
+
+    /* Artigos em coluna unica, centralizados */
+    .artigos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        padding: 10px;
+    }
+
+    .noticia {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .noticia h3 {
+        text-align: center;
+    }
+
+    .noticia h4 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .noticia p {
+        text-align: center;
+        margin: 0 10px;
+        padding-bottom: 8px;
+    }
+
+    .noticia a {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .artigos img {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+
+    .lista-noticias {
+        margin: 14px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .lista-noticias h2 {
+        font-size: 115%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Barra lateral — largura total, abaixo do main, centralizada */
+    .barra-lateral {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .perfil-usuario {
+        text-align: center;
+        margin: 0 0 14px 0;
+    }
+
+    .perfil-usuario h2 {
+        margin: 0;
+        padding-top: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .perfil-usuario #nome {
+        margin: 20px auto 20px auto;
+        align-items: center;
+    }
+
+    .perfil-usuario h4 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Foto e nome — centralizados, sem float */
+    .foto-perfil {
+        float: none;
+        display: block;
+        margin: 14px auto;
+    }
+
+    .perfil-usuario #nome {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Pontuacao — flexbox em coluna, centralizado */
+    .pontuacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 14px;
+    }
+
+    #meus-pontos {
+        float: none;
+        margin: 10px 0 0 0;
+        display: block;
+        text-align: center;
+    }
+
+    #num-pontos {
+        float: none;
+        margin: 6px 0 0 0;
+        display: block;
+        text-align: center;
+    }
+
+    #pontos-semana {
+        float: none;
+        clear: both;
+        display: inline-block;
+        margin: 10px auto 0 auto;
+    }
+
+    /* Busca rapida — centralizada */
+    .busca-rapida {
+        height: auto;
+        padding-bottom: 16px;
+        margin: 0 0 14px 0;
+        text-align: center;
+    }
+
+    .busca-rapida h2 {
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .busca-rapida form {
+        margin: 0 auto;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .item-formulario {
+        box-sizing: border-box;
+    }
+
+    /* Rodape — coluna unica, centralizado */
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 16px;
+        gap: 0;
+    }
+
+    .rodape-geral {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .rodape-geral h3 {
+        width: auto;
+    }
+
+    .rodape-geral p:first-of-type {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .rodape .copy {
+        text-align: center;
+        font-size: 50%;
+    }
+
+    .rodape-nav {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .rodape-contato {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .rodape div:nth-of-type(2),
+    .rodape div:nth-of-type(3) {
+        border-left: none;
+        border-top: 1px solid rgb(40, 60, 110);
+        padding-left: 0;
+        padding-top: 16px;
+        margin-top: 0;
+    }
+
+    .lista-nav-rodape {
+        padding-left: 0;
+    }
+
+    .contatos {
+        padding-left: 0;
+    }
+}
